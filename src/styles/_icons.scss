@@ -1,0 +1,43 @@
+.icon {
+    font-size: 14px;
+
+    &.edit-location {
+        color: $orange;
+    }
+    &.delete-location {
+        color: $red;
+    }
+}
+
+.no-location {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__icon-cont {
+        height: 150px;
+        width: 150px;
+        background: grey;
+        opacity: 0.7;
+        color: $white;
+        border-radius: 50%;
+        position: relative;
+        > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 80px;
+            width: 60px;
+            height: 80px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    small {
+        color: grey;
+    }
+}

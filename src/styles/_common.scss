@@ -1,0 +1,91 @@
+.form-row {
+    margin-bottom: 1rem;
+}
+
+.Label, label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: $secondary;
+    font-size: 12px;
+}
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $input-border;
+    background-color: $white;
+    font: inherit;
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: $primary;
+}
+
+.Invalid {
+    border-bottom: 1px solid $red;
+}
+
+.secondary-style {
+    background-color: $button-secondary;
+    border: none;
+}
+
+.primary-style {
+    background-color: $button-primary;
+    border: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    tr {
+        background: $white;
+        td, th {
+            border: 0;
+            font-size: 12px;
+            line-height: 2;
+            padding: 5px !important;
+            box-shadow: 0 4px 0px #888888;
+            &:first-child {
+                padding: 5px 5px 5px 15px;
+                border-right: none;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+            &:last-child {
+                border-left: none;
+                padding: 5px 15px 5px 5px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
+}
+
+.tag {
+    width: 25px;
+    height: 25px;
+    color: $white;
+    background: $primary;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-left: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.main-header {
+    color: $heading;
+}
+
+.modal-heading {
+    color: $primary
+}

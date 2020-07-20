@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.Input {
+    width: 100%;
+    padding: $padding;
+    box-sizing: border-box;
+    &:not(.Invalid) {
+        &:focus-within {
+            label {
+                color: $primary; 
+            }
+        }
+    }
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: $secondary;
+    font-size: 12px;
+}
+
+.InputElement {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $input-border;
+    background-color: $white;
+    font: inherit;
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0.7;
+    &:not(.Invalid) {
+        &:focus {
+            outline: none;
+            border-bottom-color: $primary;
+        }
+    }
+}
+
+.Invalid {
+    input {
+        border-bottom: 1px solid $red;
+    }
+    label {
+        color: $red; 
+    }
+}

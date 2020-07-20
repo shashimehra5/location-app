@@ -1,0 +1,25 @@
+.Modal {
+    position: absolute;
+    background-color: white;
+    width: 70%;
+    max-height: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 500;
+    overflow: auto;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 700px;
+        max-height: 550px
+    }
+}

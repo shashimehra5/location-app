@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.home_header_buttons {
+    display: flex;
+    opacity: 0.8;
+    
+    & .btn_home {
+      position: relative;
+      font-weight: 500;
+      font-size: 12px;
+      background-color: $primary;
+      border: 1px solid #173c3d;
+      padding: 8px 15px;
+
+      &:first-child {
+        color: $white;
+        border-right: none;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+
+      &:last-child {
+        border-left: none;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
+}
+
+.Tag {
+  color: $white;
+  background: $primary;
+  text-align: center;
+  line-height: 1rem;
+  margin-left: 5px;
+  padding: 6px 24px 6px 12px;
+  border-radius: 12px 12px 12px 12px;
+  font-size: 12px;
+  text-transform: capitalize;
+
+  &:after {
+    position: absolute;
+    content: "×";
+    padding: 2px;
+    margin: 3px 0 5px 4px;
+    font-size: 14px;
+  }
+}
